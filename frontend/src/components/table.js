@@ -1,40 +1,3 @@
-// import React, { useState } from 'react';
-
-// function Table({ data }) {
-//   const [sortBy, setSortBy] = useState(null);
-
-//   const handleSort = (property) => {
-//     setSortBy(property);
-//   };
-
-//   const sortedData = sortBy
-//     ? [...data].sort((a, b) => (a[sortBy] > b[sortBy] ? 1 : -1))
-//     : data;
-
-//   return (
-//     <table>
-//       <thead>
-//         <tr>
-//           <th onClick={() => handleSort('name')}>Name</th>
-//           <th onClick={() => handleSort('age')}>Age</th>
-//           <th>Occupation</th>
-//         </tr>
-//       </thead>
-//       <tbody>
-//         {sortedData.map((item, index) => (
-//           <tr key={index}>
-//             <td>{item.name}</td>
-//             <td>{item.age}</td>
-//             <td>{item.occupation}</td>
-//           </tr>
-//         ))}
-//       </tbody>
-//     </table>
-//   );
-// }
-
-// export default Table;
-
 import React, { useState } from 'react';
 import './table.css';
 function Table({ data }) {
@@ -43,10 +6,10 @@ function Table({ data }) {
   
   const handleSort = (property) => {
     if (property === sortBy) {
-      // If the same property is clicked again, toggle the sort order
+      
       setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
     } else {
-      // If a different property is clicked, set it as the new sort property in ascending order
+      
       setSortBy(property);
       setSortOrder('asc');
     }
@@ -81,7 +44,7 @@ function Table({ data }) {
         {sortedData.map((item, index) => (
           <tr key={index}>
             <td>{item.name}</td>
-            <td>{item.age}</td>
+            <td>{item.age}</td> 
             <td>{item.occupation}</td>
           </tr>
         ))}
