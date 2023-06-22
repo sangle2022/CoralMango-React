@@ -8,8 +8,8 @@ function App() {
       <BrowserRouter>
         <main className="my-3">
           <Routes>
-            <Route exact path="/" component={LoginPage} />
-            <Route exact path="/home" component={HomePage} />
+            <Route  path="/" element={<LoginPage/>} />
+            <Route  path="/home" element={<HomePage/>} />
           </Routes>
         </main>
       </BrowserRouter>
