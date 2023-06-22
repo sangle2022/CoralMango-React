@@ -1,0 +1,33 @@
+const a = [1, 3, 5, 2, 4];
+const result1 = [];
+let i = 0;
+while (i < a.length) {
+  if (i % 2 === 0) {
+    result1.push(a[i]);
+  }
+  i++;
+}
+console.log(result1);//output:[ 1, 5, 4 ]
+
+=================================================
+
+const a = [1, 3, 5, 2, 4];
+const result2 = [];
+let i = 0;
+while (i < a.length) {
+  result2.push(a[i] ** 2);
+  i++;
+}
+console.log(result2); // Output: [1, 9, 25, 4, 16]
+
+=====================================================
+const a = [1, 3, 5, 2, 4];
+const result3 = [];
+let i = 0;
+while (i < a.length) {
+  if (i % 2 === 0) {
+    result3.push(a[i] ** 2);
+  }
+  i++;
+}
+console.log(result3); // Output: [1, 25, 16]

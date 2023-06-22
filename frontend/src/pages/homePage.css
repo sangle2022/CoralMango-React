@@ -1,16 +1,44 @@
-.heading{
-    margin-left: 45%;
+.heading {
 
+    display: flex;
+    justify-content: center;
 }
-.serch{
-    margin-left: 41%;
+
+.serch {
+
+    display: flex;
+    justify-content: center;
     height: 20px;
+    align-items: center;
 }
-.text{
-    margin-left: 41%;
+
+.text {
+
+
+    margin: auto;
     background-color: rgb(129, 129, 215);
-    padding: 5px;
-    width: 165px;
+
+    width: 220px;
     color: aliceblue;
 
+}
+
+
+.view-toggle {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-toggle button {
+    padding: 8px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-toggle button:hover {
+    background-color: #555;
 }

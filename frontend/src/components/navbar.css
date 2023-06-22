@@ -1,0 +1,26 @@
+nav {
+    background-color: #3f9dd4;
+    /* height: 40px; */
+    padding: 10px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 10px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-menu li a:hover {
+    background-color: #555;
+}
